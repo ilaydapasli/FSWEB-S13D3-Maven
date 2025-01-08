@@ -14,17 +14,19 @@ public class Wall {
     public double getHeight(){
         return height;
     }
-    public double setWidth(double sayi){
+    public void setWidth(double sayi){
         if(sayi<0){
-         return  width=0;
+            width = 0;
+            return;
         }
-        return sayi=width;
+        sayi = width;
     }
-    public double setHeight(double sayi2){
+    public void setHeight(double sayi2){
         if(sayi2<0){
-            return  height=0;
+            height = 0;
+            return;
         }
-        return sayi2=height;
+        sayi2 = height;
     }
 
     public double getArea(){
