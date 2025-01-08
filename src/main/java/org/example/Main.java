@@ -8,5 +8,14 @@ public class Main {
         System.out.println("LastName: " + person1.getLastName());
         System.out.println("Age: " + person1.getAge());
         System.out.println("Is Teen: " + person1.isTeen());
+        Person person2 = new Person("Jane", "Smith", 16, 165, 55, "Blue");
+
+        System.out.println("\nFirstname: " + person2.getFirstName());
+        System.out.println("LastName: " + person2.getLastName());
+        System.out.println("Age: " + person2.getAge());
+        System.out.println("Is Teen: " + person2.isTeen());
+        System.out.println("Height: " + person2.height);
+        System.out.println("Weight: " + person2.weight);
+        System.out.println("Favorite Color: " + person2.favoriteColor);
     }
 }
