@@ -14,12 +14,13 @@ public class Wall {
     public double getHeight(){
         return height;
     }
-    public void setWidth(double sayi){
-        if(sayi<0){
-            width = 0;
-            return;
+    public void setWidth(double width) {
+        if (width < 0) {
+            this.width = 0;
+        } else {
+            this.width = width;
         }
-        sayi = width;
+    }
     }
     public void setHeight(double sayi2){
         if(sayi2<0){
