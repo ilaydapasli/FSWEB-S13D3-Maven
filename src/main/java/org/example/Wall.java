@@ -1,19 +1,25 @@
 package org.example;
-
 public class Wall {
-    double width;
-    double height;
+    private double width;
+    private double height;
 
-    public Wall(double width,double height){
-        this.width=width;
-        this.height=height;
+    // Constructor
+    public Wall(double width, double height) {
+        setWidth(width);
+        setHeight(height);
     }
-    public double getWidth(){
+
+    // Getter for width
+    public double getWidth() {
         return width;
     }
-    public double getHeight(){
+
+    // Getter for height
+    public double getHeight() {
         return height;
     }
+
+    // Setter for width
     public void setWidth(double width) {
         if (width < 0) {
             this.width = 0;
@@ -21,19 +27,18 @@ public class Wall {
             this.width = width;
         }
     }
-    }
-    public void setHeight(double sayi2){
-        if(sayi2<0){
-            height = 0;
-            return;
+
+    // Setter for height
+    public void setHeight(double height) {
+        if (height < 0) {
+            this.height = 0;
+        } else {
+            this.height = height;
         }
-        sayi2 = height;
     }
 
-    public double getArea(){
-
-        return width * height;
+    // Method to calculate area
+    public double getArea() {
+        return this.width * this.height;
     }
-
-
 }
